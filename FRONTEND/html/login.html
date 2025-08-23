@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Esto es una pagina de prueba para aprender html con el curso de midudev">
+        <meta property="og:title" content="Titulo de la pagina">
+        <meta property="og:description" content="Esto es una pagina de prueba para aprender html con el curso de midudev">
+        <meta property="og:image" content="/images/lee sin skt.png">
+        <meta property="og:image:alt" content="texto que aparece si no se puede cargar la imagen">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#09f">
+
+        <link rel="alternate" href="https://ejemplo/en" hreflang="es-ES">
+        <link rel="canonical" href="https://midu.dev">
+        <link rel="icon" type="image/png" href="/images/lee sin skt.png">
+        <link rel="stylesheet" href="../css/loginStyle.css">
+
+        <title>PROYECTO JWT</title>
+    </head>
+    <body>
+        
+        <div id="formularioLogin">
+            <form method="post" action="/">
+                
+                <fieldset id="cuadroLogin">
+                    
+                    <h1>LOGIN JWT</h1>
+                    <label for="name">Nombre: </label>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Javier Carceles" 
+                        required 
+                        pattern="[A-Za-z\s]+">
+                        
+                        <br>
+
+                        <label for="password">Contraseña: </label>
+                        <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        title="La contraseña debe tener al menos 8 caracteres, con al menos una letra mayúscula y una letra minúscula." 
+                        required 
+                        pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+                        
+                        <!-- Texto y link a registro -->
+                        <p>¿No tienes cuenta? <a href="singIn.html">Regístrate aquí</a></p>
+                        
+                        <input type="submit" class="botonFormulario" value="enviar datos">
+                </fieldset>
+                
+            </form>
+        </div>
+        <script src="../js/loginJs.js"></script>
+    </body>
+</html>
