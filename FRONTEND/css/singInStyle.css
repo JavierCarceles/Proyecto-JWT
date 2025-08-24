@@ -1,86 +1,111 @@
 body {
-    background-color: #7dd2f3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
+  background-color: #7dd2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
 }
 
 #formularioRegistro {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cuadroRegistro {
-    background-color: wheat;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-    padding: 40px 32px;
-    text-align: center;
-    width: 400px;
-    border: none;
+  background-color: wheat;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 40px 32px;
+  width: 400px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #cuadroRegistro h1 {
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 18px;
-    color: #1a4e6a;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #1a4e6a;
 }
 
-#cuadroRegistro label {
-    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    display: block;
-    color: #333;
-    text-align: left;
+.form-group {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
 }
 
-#cuadroRegistro input[type="text"],
-#cuadroRegistro input[type="email"],
-#cuadroRegistro input[type="password"],
-#cuadroRegistro input[list] {
-    font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
-    font-size: 1rem;
-    margin-bottom: 14px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #bdbdbd;
-    width: 90%;
-    box-sizing: border-box;
+.form-group label {
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input {
+  font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #location {
-    background-color: #fdfdfd;
-    transition: border-color 0.3s;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s;
 }
 
 #location:focus {
-    border-color: #1a4e6a;
-    outline: none;
-    box-shadow: 0 0 4px rgba(26, 78, 106, 0.4);
+  border-color: #1a4e6a;
+  outline: none;
+  box-shadow: 0 0 4px rgba(26, 78, 106, 0.4);
 }
 
 .botonFormulario {
-    background-color: #7dd2f3;
-    color: #1a4e6a;
-    border: none;
-    border-radius: 10px;
-    padding: 12px 28px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
-    margin-top: 12px;
+  background-color: #7dd2f3;
+  color: #1a4e6a;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 12px;
 }
 
 .botonFormulario:hover {
-    background-color: #1a4e6a;
-    color: white;
+  background-color: #1a4e6a;
+  color: white;
+}
+
+#volverContainer {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#volverLink {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #007BFF;
+  font-family: Arial, sans-serif;
+}
+
+#volverLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

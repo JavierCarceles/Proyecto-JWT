@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const locationInput = document.getElementById('location');
     const datalist = document.getElementById('countries');
     const form = document.querySelector('form');
+    const idioma = localStorage.getItem('language') || 'es';
 
     fetch('../data/paises.json')
         .then(response => response.json())
         .then(paises => {
-            paises.forEach(pais => {
+            const listaPaises = paises[idioma] || [];
+            listaPaises.forEach(pais => {
                 const option = document.createElement('option');
                 option.value = pais;
                 datalist.appendChild(option);
@@ -27,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const location = locationInput.value;
 
         if (!location) {
-            alert('Debes seleccionar tu ciudad.');
+            alert('Debes seleccionar tu país.');
             return;
         }
 
