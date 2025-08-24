@@ -2,24 +2,16 @@ Esta es una aplicación web que implementa autenticación basada en JWT (JSON We
 
 ====Tecnologías Backend====
 
-Java 17+ con Spring Boot
-
-Seguridad con JWT para autenticación y autorización
-
-MySQL para almacenamiento de usuarios
-
-Spring Data JPA para interacción con la base de datos
-
-Maven para gestión de dependencias
+->Java 17+ con Spring Boot
+->Seguridad con JWT para autenticación y autorización
+->MySQL para almacenamiento de usuarios
+->Spring Data JPA para interacción con la base de datos
+->Maven para gestión de dependencias
 
 ====Tecnologóas Frontend====
 
-React 18
-
-React Router para navegación entre páginas
-
-Context API para manejo de idiomas (internacionalización básica)
-
-Fetch API para llamadas a la API REST del backend
-
-CSS personalizado para estilos
+->React 18
+->React Router para navegación entre páginas
+->Context API para manejo de idiomas (internacionalización básica)
+->Fetch API para llamadas a la API REST del backend
+->CSS personalizado para estilos
