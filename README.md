@@ -1,6 +1,3 @@
-Proyecto JWT Login
-Descripción
-
 Esta es una aplicación web que implementa autenticación basada en JWT (JSON Web Tokens) utilizando un backend en Spring Boot y un frontend en React. Permite a los usuarios registrarse, iniciar sesión y acceder a contenido protegido mediante tokens JWT, con soporte multilenguaje en la interfaz.
 
 Tecnologías
