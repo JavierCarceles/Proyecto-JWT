@@ -1,0 +1,121 @@
+body {
+  background-color: #7dd2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+
+#formularioRegistro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cuadroRegistro {
+  background-color: wheat;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 40px 32px;
+  width: 400px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cuadroRegistro h1 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #1a4e6a;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input {
+  font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#location {
+  background-color: #fdfdfd;
+  transition: border-color 0.3s;
+}
+
+#location:focus {
+  border-color: #1a4e6a;
+  outline: none;
+  box-shadow: 0 0 4px rgba(26, 78, 106, 0.4);
+}
+
+.botonFormulario {
+  background-color: #7dd2f3;
+  color: #1a4e6a;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 12px;
+}
+
+.botonFormulario:hover {
+  background-color: #1a4e6a;
+  color: white;
+}
+
+#volverContainer {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 1000;
+}
+
+#volverLink {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-color: #004080;
+  padding: 8px 14px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+#volverLink:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+
+
